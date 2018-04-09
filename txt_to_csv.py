@@ -21,6 +21,4 @@ def csv_to_txt(path_csv,path_new_txt,sep):
     txt_file = open(path_new_txt,'w')
     csv_file = open(path_csv, 'r')
     for line in csv_file:
-        print(line.replace(sep,""))
         txt_file.write(line.replace(sep,""))	
-        
