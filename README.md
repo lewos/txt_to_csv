@@ -11,6 +11,11 @@ txtcsv.text_to_csv('old.txt',['uno','dos','tres'],[0,2,5,7],'new1.csv')
 
 
 
+DataFrameGroupBy = df.groupby('tres')
+for  key,df_key in DataFrameGroupBy:
+    print key
+
+
 
 
 
