@@ -12,6 +12,10 @@ txtcsv.text_to_csv('old.txt', ['uno','dos','tres'],[0,2,5,7], 'new1.csv', ',')
 
 # csv_to_txt
 
+csv_to_txt(<path_old_file>, <name_new_file_with_.txt>, <sep_>)
+
+csv_to_txt('new1.csv','newtxt1.txt',';')
+
 
 
 
