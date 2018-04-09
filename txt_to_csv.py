@@ -1,7 +1,7 @@
-from itertools import tee, izip_longest
+from itertools import tee, zip_longest
 
 def split_text(text, list_of_sep): 
-    parts = [text[i:j] for i,j in izip_longest(list_of_sep,list_of_sep[1:])]
+    parts = [text[i:j] for i,j in zip_longest(list_of_sep,list_of_sep[1:])]
     return parts
 
 def text_to_csv(path_text_file,name_list, list_of_sep, path_new_file,sep):
